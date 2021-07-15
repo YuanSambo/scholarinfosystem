@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ 
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-image: url("../images/background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #1b1717;
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+        }
+
+        .login_card {
+            height: 350px;
+            width: 350px;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color:maroon;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 20px;
+        }
+
+        .brand_logo_container {
+            position: absolute;
+            height: 170px;
+            width: 170px;
+            top: -70px;
+            border-radius: 50%;
+            background: #810000;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .brand_logo {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            border: 5px solid #810000;
+        }
+
+        .input_field {
+            margin-top: 100px;
+        }
+
+        .input-group {
+            background-color: white;
+        }
+
+        .btn-login {
+            align-content: center;
+            width: 100%;
+            background: #1b1717 !important;
+            color: white !important;
+        }
+
+        .login_btn:focus {
+            box-shadow: none !important;
+            outline: 0px !important;
+        }
+
+        .login_container {
+            padding: 0 2rem;
+        }
+
+        .warning {
+            color: #3a0808;
+        }
+
+        i {
+            font-size: 23px;
+            color: #1b1717;
+        }
+
+        .buttons {
+            justify-content: space-between;
+        }
+
+        .input_user,
+        .input_pass:focus {
+            box-shadow: none !important;
+            outline: 0px !important;
+        }
+
+        .login-footer {
+            position: absolute;
+            bottom: 10%;
+            text-align: center;
+            font-size: 1.4em;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+        }

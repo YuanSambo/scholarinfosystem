@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 13px;
+}
+
+/* Variables */
+:root {
+  --white: #f0f0f0;
+  --black: #1b1717;
+  --maroon: maroon;
+  --red: #630000;
+  --text-color: #a1a1a1;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* button styles */
+
+.btn {
+  padding: 1.3rem 3rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  color: var(--white);
+  background-color: var(--black);
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn:active {
+  transform: scale(0.7);
+}
+
+/* Default Styling */
+
+body {
+   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  padding: 3rem 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  width: 100%;
+}
+
+p.para {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  text-align: center;
+  line-height: 2.1rem;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+p.text-error {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--red) !important;
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0 !important;
+  text-align: left;
+}
+
+.mt {
+  margin-top: 3rem;
+}
+
+.logo {
+  width: 50px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: var(--white);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: var(--white);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 80%;
+}
+
+/* Start Style */
+.form-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-content {
+  background-color: var(--white);
+  border-radius: 2rem;
+  margin-top: 2rem;
+  padding: 3rem;
+}
+
+.form-header {
+  background-color: var(--maroon);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.form-group {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 90%;
+  }
+  .form-group {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .btn-container {
+    justify-content: center;
+  }
+
+  p.para {
+    width: 100%;
+  }
+}

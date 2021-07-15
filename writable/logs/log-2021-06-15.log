@@ -1,0 +1,44 @@
+CRITICAL - 2021-06-15 20:28:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+#0 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Admin\Dashboard->index()
+#1 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#2 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\scholarinfosystem\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-06-15 20:29:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getesult()
+#0 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Admin\Dashboard->index()
+#1 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#2 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\scholarinfosystem\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2021-06-15 21:16:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%%' ESCAPE '!'' at line 4
+CRITICAL - 2021-06-15 21:16:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIKE '%%' ESCAPE '!'' at line 4
+#0 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('SELECT `user_em...')
+#1 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_em...')
+#2 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_em...')
+#3 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT `user_em...', Array, false)
+#4 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Model.php(800): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\scholarinfosystem\app\Controllers\Admin\Dashboard.php(25): CodeIgniter\Model->__call('get', Array)
+#6 D:\xampp\htdocs\scholarinfosystem\app\Controllers\Admin\Dashboard.php(14): App\Controllers\Admin\Dashboard->generateTable()
+#7 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Admin\Dashboard->index()
+#8 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#9 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\scholarinfosystem\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2021-06-15 21:16:21 --> Unknown column 's' in 'where clause'
+CRITICAL - 2021-06-15 21:16:21 --> Unknown column 's' in 'where clause'
+#0 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(329): mysqli->query('SELECT `user_em...')
+#1 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_em...')
+#2 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Database\BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_em...')
+#3 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT `user_em...', Array, false)
+#4 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Model.php(800): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\scholarinfosystem\app\Controllers\Admin\Dashboard.php(25): CodeIgniter\Model->__call('get', Array)
+#6 D:\xampp\htdocs\scholarinfosystem\app\Controllers\Admin\Dashboard.php(14): App\Controllers\Admin\Dashboard->generateTable()
+#7 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(928): App\Controllers\Admin\Dashboard->index()
+#8 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#9 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\scholarinfosystem\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\scholarinfosystem\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#12 {main}

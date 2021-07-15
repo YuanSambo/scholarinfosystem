@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins";
+}
+
+body{
+  background-color: #f0f0f0;
+}
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: maroon;
+}
+
+
+.navbar-custom {
+  background-color: maroon;
+}
+
+.nav-btn {
+  color: #f0f0f0 !important;
+}
+
+.nav-btn:hover {
+  opacity: 50%;
+}
+
+/****************** PROFILE ******************/
+
+.user-card {
+  text-align: center;
+  background-color: maroon;
+  height: 22rem;
+  width: 100%;
+  border-radius: 3%;
+  color: white;
+}
+
+.user-card_button{
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width:50%;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+
+.user-card img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-action {
+  font-family: 'Montserrat';
+  background-color: white;
+  height: 3rem;
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 20%);
+  border-radius: 1rem;
+}
+
+.sidebar-action a {
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+.main-card {
+  background-color: white;
+  overflow: hidden;
+  height: 80vh;
+  border-radius: 3%;
+}
+
+.main-card_title {
+  padding: 20px 10px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.main-card_content {
+  margin: 0 30px;
+  margin-bottom: 300px;
+  
+}
+
+p.text-error {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--red) !important;
+  font-size: 1.5rem;
+  margin: 1rem 0 0 0 !important;
+  text-align: left;
+}
+
+input {
+  margin: 0 10px 20px;
+  font-family: "Montserrat";
+  font-size: 19px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #1b1717;
+  border-width: 1px 1px 1px 1px;
+  justify-content: space-between;
+}
+
+label {
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+
+form .main-card_btn {
+  height: 100%;
+  padding: 5px;
+  float: right;
+  width: 25%;
+  border-radius: 5px;
+  border: none;
+  color: #f0f0f0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: maroon;
+}
+
+.requirements_btn{
+    background-color: maroon;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding:5px 30px;
+    margin:0 30px;
+
+}
+
+.requirements_btn a{
+    color: white;
+  
+}
+
+@media only screen and (max-width: 640px) {
+
+  .main-card {
+  background-color: white;
+  overflow: hidden;
+  height: 250vh;
+  border-radius: 3%;
+}
+
+}
+
+ 
