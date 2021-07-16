@@ -15,7 +15,7 @@
             <?php if ($status == "Accepted") : ?>
                 <h3 style="color:green;" class="mt-3">Status : <?= $status ?></h3>
             <?php else : ?>
-                <h3 style="color:orange; class=" mt-3"">Status : <?= $status ?></h3>
+                <h3 style="color:orange;" class="mt-3">Status : <?= $status ?></h3>
             <?php endif; ?>
             <h3 class="main-card_title">Personal Information</h3>
             <form action="" method="post">

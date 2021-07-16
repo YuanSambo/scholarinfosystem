@@ -11,6 +11,7 @@ class UserModel extends Model
     protected $allowedFields = ['user_id', 'user_email', 'user_password', 'user_type',];
 
 
+    // Get all users
     public function getAllUser()
     {
         return $this->select()
@@ -19,6 +20,7 @@ class UserModel extends Model
             ->getResult();
     }
 
+    // Get details of the user
     public function getUserDetails($id)
     {
         return $this->where(['user_id' => $id])

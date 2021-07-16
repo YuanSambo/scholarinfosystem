@@ -13,6 +13,8 @@ class FileUpload extends BaseController
     {
         
         $requirementsModel = new RequirementsModel();
+
+        // Validation Rules
         $rules = [
             'regForm' => [
                 'label' => 'Registration Form',
@@ -33,6 +35,7 @@ class FileUpload extends BaseController
 
         ];
 
+        // Validation of the user input
         if ($this->validate($rules)) {
 
             $user_id = session()->user_id;

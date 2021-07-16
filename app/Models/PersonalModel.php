@@ -27,6 +27,7 @@ class PersonalModel extends Model
     ];
 
 
+    // Get the personal details of the user
     public function getPersonalDetails($id)
     {
         return $this->where(['user_id' => $id])

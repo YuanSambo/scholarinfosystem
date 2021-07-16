@@ -19,6 +19,7 @@ class Login extends BaseController
     $session = session();
     $model = new UserModel();
 
+    // Get variables from the HTML
     $email = $this->request->getVar('email');
     $password = $this->request->getVar('password');
 
@@ -33,12 +34,15 @@ class Login extends BaseController
         if ($verify_pass) {
 
             $this->setSessionData($data['user_id'], $data['user_email'],$data['user_type']);
+
+            // When the account is an Admin
             if ($user_type == 'admin') {
                 return redirect()->to('/admin/dashboard');
             }
-
+            // When the account is an User
             return redirect()->to('/user/profile');
         } else {
+
             $session->setFlashdata('msg', 'Wrong Password');
             return redirect()->to('/login');
         }
@@ -47,6 +51,7 @@ class Login extends BaseController
         return redirect()->to('/login');
     }
 }
+
     public function logout()
     {
         $session = session();
@@ -55,6 +60,7 @@ class Login extends BaseController
     }
 
 
+    // Set sessions data 
     public function setSessionData($user_id, $user_email,$user_type)
     {
         $session = session();

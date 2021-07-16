@@ -27,8 +27,6 @@
                 <li class="nav-item">
                     <a class="nav-link nav-btn mr-4" href="/login/logout">Logout</a>
                 </li>
-
-
             <?php else : ?>
                 <li class="nav-item">
                     <a class="nav-link nav-btn mr-4" href="login">Login</a>

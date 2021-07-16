@@ -61,6 +61,7 @@ class Register extends BaseController
             ];
 
 
+            // Validates all the user input
         if ($this->validate($rules)) {
 
             $userData = [

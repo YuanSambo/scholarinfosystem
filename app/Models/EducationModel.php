@@ -21,6 +21,7 @@ class EducationModel extends Model
         'senior_year'
     ];
 
+    // Get the education background of the user
     public function getEducationDetails($id)
     {
         return $this->where(['user_id' => $id])
