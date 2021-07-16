@@ -18,19 +18,19 @@ class FileUpload extends BaseController
         $rules = [
             'regForm' => [
                 'label' => 'Registration Form',
-                'rules' => 'uploaded[regForm]|ext_in[regForm,png]',
+                'rules' => 'uploaded[regForm]|ext_in[regForm,png,pdf',
             ],
             'grades' => [
                 'label' => 'Grades',
-                'rules' => 'uploaded[grades]|ext_in[grades,png]',
+                'rules' => 'uploaded[grades]|ext_in[grades,png,pdf]',
             ],
             'signatures' => [
                 'label' => 'Signatures',
-                'rules' => 'uploaded[signatures]|ext_in[signatures,png]',
+                'rules' => 'uploaded[signatures]|ext_in[signatures,png,pdf]',
             ],
             'profile' => [
                 'label' => 'Profile Picture',
-                'rules' => 'uploaded[profile]|ext_in[profile,png]',
+                'rules' => 'uploaded[profile]|ext_in[profile,png,pdf]',
             ],
 
         ];
