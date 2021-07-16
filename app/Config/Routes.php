@@ -42,6 +42,8 @@ $routes->post('user/profile', 'User/FileUpload::index', ['filter' => 'auth']);
 $routes->get('admin/dashboard', 'admin/dashboard::index', ['filter' => 'auth']);
 $routes->get('admin/dashboard/profile/(:num)', 'Admin\Dashboard::Profile/$1', ['filter' => 'auth']);
 $routes->get('admin/dashboard/delete/(:num)', 'Admin\Dashboard::Delete/$1', ['filter' => 'auth']);
+$routes->get('admin/dashboard/acceptStatus/(:num)', 'Admin\Dashboard::acceptStatus/$1', ['filter' => 'auth']);
+
 
 
 

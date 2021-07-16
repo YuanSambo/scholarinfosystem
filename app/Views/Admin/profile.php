@@ -6,16 +6,16 @@
 <div class="container-fluid mb-5 ">
     <div class="col-12 col-lg-7 main-card">
         <section id="personal" class=" main-card_content">
-            <?php if (!session()->noReq) : ?>
+            <?php if (!$noReq) : ?>
                 <img class="mt-5" src="<?= base_url($profile) ?>" alt="" srcset="">
             <?php else : ?>
                 <img class="mt-5" src="<?= base_url("uploads/default.png") ?>" alt="" srcset="">
             <?php endif; ?>
 
-            <?php if ($status == "Accepted") : ?>
-                <h3 style="color:green;" class="mt-3">Status : <?= $status ?></h3>
+            <?php if ($user_status == "Accepted") : ?>
+                <h3 style="color:green;" class="mt-3">Status : <?= $user_status ?></h3>
             <?php else : ?>
-                <h3 style="color:orange;" class="mt-3">Status : <?= $status ?></h3>
+                <h3 style="color:orange;" class="mt-3">Status : <?= $user_status ?></h3>
             <?php endif; ?>
             <h3 class="main-card_title">Personal Information</h3>
             <form action="" method="post">
@@ -122,27 +122,35 @@
                         <label for="elem">Profile Picture</label>
                     </div>
                     <div class="col-12 col-lg-3">
-                        <div class="requirements_btn"><a target="_blank" href="/<?= $profile ?>"> View </a> </div>
+                        <?php if (!$noReq) : ?>
+                            <div class="requirements_btn"><a target="_blank" href="/<?= $profile ?>"> View </a> </div>
+                        <?php endif; ?>
                     </div>
                     <div class="col-12 col-lg-9 mb-5">
                         <label for="elem">Certified True Copy of Registration Form</label>
                     </div>
 
                     <div class="col-12 col-lg-3">
-                        <div class="requirements_btn"><a target="_blank" href="/<?= $regForm ?>"> View </a> </div>
+                        <?php if (!$noReq) : ?>
+                            <div class="requirements_btn"><a target="_blank" href="/<?= $regForm ?>"> View </a> </div>
+                        <?php endif; ?>
                     </div>
                     <div class="col-12 col-lg-9  mb-5">
                         <label for="elem">Certified True Copy of Grades</label>
                     </div>
                     <div class="col-12 col-lg-3">
-                        <div class="requirements_btn"><a target="_blank" href="/<?= $grades ?>"> View </a> </div>
+                        <?php if (!$noReq) : ?>
+                            <div class="requirements_btn"><a target="_blank" href="/<?= $grades ?>"> View </a> </div>
+                        <?php endif; ?>
                     </div>
 
                     <div class="col-12 col-lg-9  mb-5">
                         <label for="elem">Photocopy of ID with 3 Signatures</label>
                     </div>
                     <div class="col-12 col-lg-3">
-                        <div class="requirements_btn"><a target="_blank" href="/<?= $signatures ?>"> View </a> </div>
+                        <?php if (!$noReq) : ?>
+                            <div class="requirements_btn"><a target="_blank" href="/<?= $signatures ?>"> View </a> </div>
+                        <?php endif; ?>
                     </div>
                     <div class="requirements_btn" style="margin: auto;"><a href=" <?= base_url("admin/dashboard/acceptStatus/$user_id") ?>" style="color:white;">Accept</a></div>
                     <div class="requirements_btn" style="margin: auto;"><a href=" <?= base_url("admin/dashboard/delete/$user_id") ?>" style="color:white;">Delete</a></div>

@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\PersonalModel;
 use App\Models\EducationModel;
 use App\Models\RequirementsModel;
+use App\Models\UserModel;
 
 class Profile extends BaseController
 {
@@ -17,11 +18,13 @@ class Profile extends BaseController
         $educationModel = new EducationModel();
         $personalModel = new PersonalModel();
         $requirementsModel = new RequirementsModel();
+        $userModel = new UserModel();
 
 
         $data = array_merge(
             $personalModel->getPersonalDetails($user_id),
             $educationModel->getEducationDetails($user_id),
+            $userModel->getUserDetails($user_id)
         );
 
 

@@ -2,10 +2,10 @@
 
 namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
+use App\Models\CustomModel;
 use App\Models\UserModel;
-use App\Models\PersonalModel;
-use App\Models\EducationModel;
 use App\Models\RequirementsModel;
+
 
 
 
@@ -21,22 +21,25 @@ class Dashboard extends BaseController
     }
 
 
-    public function getPersonal(){
-        $userModel = new UserModel();
+    public function getUsers(){
+        $db = db_connect();
+        $custom = new CustomModel($db);
 
-        $data = $userModel->getAllUser();
+        $data = $custom->getAllData();
         echo json_encode($data);
 
     }
 
     public function profile($id){
 
-        $personalModel = new PersonalModel();
-        $educationModel = new EducationModel();
         $requirementsModel = new RequirementsModel();
 
 
-        $data = array_merge($personalModel->getPersonalDetails($id),$educationModel->getEducationDetails($id));
+        $db = db_connect();
+        $custom = new CustomModel($db);
+
+      
+        $data = $custom -> getUser($id);
         $data["noReq"] = $requirementsModel->isNull($id);
 
         if (!$data["noReq"]) {
@@ -48,12 +51,12 @@ class Dashboard extends BaseController
 
     public function acceptStatus($id){
 
-        $personalModel = new PersonalModel();
+        $userModel = new userModel();
         $data = [
-            "status" => "Accepted",
+            'user_status' => 'Accepted',
         ];
      
-        $personalModel->update($id,$data);
+        $userModel->update($id,$data);
 
         return redirect()->back();
     }

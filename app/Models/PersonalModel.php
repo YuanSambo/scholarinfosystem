@@ -22,7 +22,6 @@ class PersonalModel extends Model
         'municipality',
         'barangay',
         'full_address',
-        'status',
 
     ];
 

@@ -121,6 +121,7 @@ form .main-card_btn {
 
 .requirements_btn {
   background-color: maroon;
+  text-align: center;
   border-radius: 5px;
   border: none;
   color: white;

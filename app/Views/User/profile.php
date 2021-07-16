@@ -18,7 +18,11 @@
 
                 <h6 class="mt-3"><?= session()->full_name; ?></h6>
                 <h6>SY. 2020-2021 (2nd Sem)</h6>
-                <h6 style="color:orange;">Status : <?= session()->status ?></h6>
+                <?php if (session()->user_status == "Accepted") : ?>
+                    <h6 style="color:limegreen;" class="mt-3">Status : <?= session()->user_status ?></h6>
+                <?php else : ?>
+                    <h6 style="color:orange;" class="mt-3">Status : <?= session()->user_status ?></h6>
+                <?php endif; ?>
             </div>
 
             <div class="sidebar-action" id="action1">

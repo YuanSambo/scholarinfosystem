@@ -11,6 +11,7 @@
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= session()->css ?>">
+    <link rel="icon" href="/images/logo.png" type="image/gif">
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <style>
 
@@ -30,15 +31,37 @@
 
                 info: false,
                 ajax: {
-                    url: '<?= base_url('admin/dashboard/getPersonal') ?>',
+                    url: '<?= base_url('admin/dashboard/getUsers') ?>',
                     dataSrc: ''
                 },
                 columns: [{
 
+                        title: 'ID',
                         data: 'user_id'
                     },
                     {
+                        title: 'First Name',
+                        data: 'first_name'
+                    },
+                    {
+                        title: 'Middle Name',
+                        data: 'middle_name'
+                    },
+                    {
+                        title: 'Last  Name',
+                        data: 'last_name'
+                    },
+                    {
+                        title: 'Contact Number',
+                        data: 'contact_number'
+                    },
+                    {
+                        title: 'Email',
                         data: 'user_email'
+                    },
+                    {
+                        title: 'Status',
+                        data: 'user_status'
                     },
 
 
